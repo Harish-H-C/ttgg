@@ -1,0 +1,8 @@
+.tableFixHead          { overflow: auto; max-height: 58vh;min-height: 50vh; padding-left: 7px;}
+/* .tableFixHead          { overflow: auto; height: 300px; } */
+.tableFixHead thead th { position: sticky; top: 0; z-index: 1; }
+table  { border-collapse: collapse; width: 100%; }
+th     { background:#fff; }
+
+.tableFixHead1          { overflow: auto; height:400px; padding-left: 7px; padding-right:7px;}
+.tableFixHead1 thead th { position: sticky; top: 0; z-index: 1; }

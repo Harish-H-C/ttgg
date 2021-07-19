@@ -1,0 +1,106 @@
+import React, { useState, useEffect } from 'react';
+import { Bar } from "react-chartjs-2";
+import axios from "axios";
+
+const Barchart = () => {
+    const [chartData, setChartData] = useState({});
+    // const [employeeSalary, setEmployeeSalary] = useState([]);
+    // const [employeeAge, setEmployeeAge] = useState([]);
+  
+    const chart = () => {
+      let empMass = [];//y-axis
+      let empRange = [];//x-axis
+      axios
+        .get("http://localhost:8900/datasss")
+        .then(res => {
+          console.log(res);
+          for (const dataObj of res.data) {
+            empMass.push(parseInt(dataObj.employee_datas));//parseInt is used to transfer data only in integer
+            empRange.push((dataObj.massages_between));
+          }
+          setChartData({
+            labels: empRange,
+            // labels: [
+            //   "January","February","March","April","May"
+            // ],
+            datasets: [
+              {
+                label: "Therapist Loading data",
+                data: empMass,
+                backgroundColor: ["rgba(75, 192, 192, 0.6)","rgba(255,205,86,1)","rgb(255,0,0)","rgb(0,0,255)","rgb(60,179,113)"],
+                borderWidth: 2
+              }
+            ]
+          });
+        })
+        .catch(err => {
+          console.log(err);
+        });
+      console.log(empMass, empRange);
+    };
+  
+    useEffect(() => {
+      chart();
+    }, []);
+    return (
+      <div className="App">
+        <div>
+          <Bar
+            data={chartData}
+            options={{
+              responsive: true,
+              title: { text: "THICCNESS SCALE", display: true },
+
+              // maintainAspectRatio: false,
+              layout: {
+                padding: {
+                    top: 100,
+                    left: 10,
+                    right: 15,
+                     bottom: 15
+                }
+              },
+
+            scales: {
+              yAxes: [
+                {
+                  scaleLabel: {
+                    display: true,
+                    labelString: "Probability",
+                  },
+                },
+              ],
+              xAxes: [
+                {
+                  scaleLabel: {
+                    display: true,
+                    labelString: "Therapist ID Numbers",
+                    text:'variables',
+                  },
+                },
+              ],
+            },
+              
+              onClick: (event, elements) => {
+                const chart = elements[0]._chart
+                const element = chart.getElementAtEvent(event)[0];
+                const xLabel = chart.data.labels[element._index];
+                console.log(xLabel);
+
+                // const dataset = chart.data.datasets[element._datasetIndex];
+                // const value = dataset.data[element._index];
+                // console.log(dataset.backgroundColor[0] + " at " + xLabel + ": " + value);
+                if (xLabel == "MH6534"){
+                  window.location.replace('/dashboard')
+                }
+                else if (xLabel === 20 ){
+                  window.location.replace('https://www.w3schools.com/html/')
+                }
+              }
+            }}
+          />
+        </div>
+      </div>
+    );
+  };
+  export default  Barchart;

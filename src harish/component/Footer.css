@@ -1,0 +1,37 @@
+.footerParagraph{
+    text-align:center;
+    font-size: 12px;
+    /* font-weight: bold; */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 5px;
+}
+/* .footerParagraph1{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 3%;
+} */
+
+/* .container-fluid{
+    min-height:100%;
+    position:relative;
+}
+.footer{
+    background-color: #455A64;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    min-height: 3vh;
+}
+
+.text{
+    text-align: center;
+    color: white;
+    font-size: 18px;
+} */

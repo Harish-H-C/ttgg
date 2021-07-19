@@ -1,0 +1,74 @@
+import React from 'react';
+import {Link} from 'react-router-dom';
+import Header1 from '../component/Header1';
+import './Dashboard.css';
+
+const Dashboard = () => {
+    return(
+        <div>
+            <Header1/>
+
+            <div className="container-fluid">
+
+            <ul className="nav nav-tabs" role="tablist">
+                <li className="nav-item">
+                <Link to="#"><a className="nav-link active" data-toggle="tab" >Dashboard</a></Link>
+                </li>
+                <li className="nav-item">
+                <Link to="/detail/mismatch"><a className="nav-link" data-toggle="tab" href="#menu1">Deviation Report</a></Link>
+                </li>
+                <li className="nav-item">
+                <Link to ="#"><a className="nav-link" data-toggle="tab" href="#menu2">Therapist Activity</a></Link>
+                </li>
+                <li className="nav-item">
+                <Link to="/detail/touchdown"><a className="nav-link" data-toggle="tab" href="#menu2">Detailed Report</a></Link>
+                </li>
+                <li className="nav-item">
+                <Link to="/detail/sensor"><a className="nav-link" data-toggle="tab" href="#menu2">System Log</a></Link>
+                </li>
+            </ul>
+
+            <br/>
+
+            <div className="container-fluid">
+                <div className="row">
+                    <div className="col-lg-6">
+                        <div className="caption">
+                            <label><b>Deviation Report</b></label>
+                        </div>
+                        <Link to = "/detail/mismatch"><img className="img-fluid" src="../images/o2spa.jpg" alt="" /></Link> 
+                    </div>
+
+                    <div className="col-lg-6">
+                        <div className="caption">
+                            <label><b>Therapist Activity</b></label>
+                        </div>
+                        <Link to ="#"><img className="img-fluid" src="../images/o2spa.jpg" alt="" /></Link> 
+                    </div>
+
+                    <hr/>
+
+                    <div className="col-lg-6">
+                        <div className="caption">
+                            <label><b>Detailed Report</b></label>
+                        </div>
+                        <Link to="/detail/touchdown"><img className="img-fluid" src="../images/o2spa.jpg" alt="" /></Link>
+                    </div>
+
+                    <div className="col-lg-6">
+                        <div className="caption">
+                            <label><b>System Log</b></label>
+                        </div>
+                        <Link to="/detail/sensor"><img className="img-fluid" src="../images/o2spa.jpg" alt="" /></Link>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    )
+}
+
+export default Dashboard;
+
+

@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+box-sizing: border-box;
+}
+html,
+body {
+height: 100%;
+position: relative;
+}
+.dashboardPage{
+  min-height: 100vh; /* will cover the 100% of viewport */
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+
+.tileContainer{
+  box-shadow: 0 3px 6px black;
+  margin-left : 7%;
+  /* margin-bottom: 1%; */
+  margin-top: 3%;
+  width:85%;
+  height: 28vh;
+  background-color: white;
+  display: inline-block;
+
+}
+/* .tileCenter{
+  padding-top: 1%;
+} */
+
+.tileComponent1{
+  width:40%;
+  float: left;
+}
+
+.tileComponent2{
+  width: 100%;
+  padding-left: 40%;
+}
+
+.tileComponent1>img{
+  height:100px;
+  width:100px;
+  margin-left: 14%;
+  margin-top: 17%;
+}
+
+.componentHeading{
+  text-align: left;
+  color:teal;
+  font-size:18px;
+  font-weight: bold;
+  padding-top:2%;
+}
+
+.componentSubHeading{
+  text-align: left;
+  color:gray;
+  font-size:13px;
+  margin-top: 2% ;
+}
+
+ul li .anchor_tags{
+  text-decoration: none;
+}
+
+.nav-link{
+  color: black;
+}
+
+
+/* @media only screen and (max-width:800px) {
+  .tileContainer {
+    width: auto;
+    height: auto;
+  }
+}
+@media only screen and (max-width:800px) {
+  .tileContainer {
+    width: auto;
+  }
+} */
+
+
+ .square6{
+  width:10px;
+  height:10px;
+  padding-bottom: 5px;
+  background:#64DD17;
+}
+
+ .square8{
+  width:10px;
+  height:10px;
+  background:blue;
+}
+
+.square7{
+  width:10px;
+  height:10px;
+  background:red;
+}
+

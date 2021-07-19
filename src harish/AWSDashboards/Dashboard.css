@@ -1,0 +1,77 @@
+
+.tileContainer{
+  box-shadow: 0 3px 6px black;
+  margin-left : 5%;
+  margin-bottom: 5%;
+  width:85%;
+  height: 75%;
+  background-color: white;
+  display: inline-block;
+
+}
+
+.tileComponent1{
+  width:40%;
+  float: left;
+}
+
+.tileComponent2{
+  width: 100%;
+  padding-left: 40%;
+}
+
+.tileComponent1>img{
+  height:140px;
+  width:60%;
+  margin-left: 12%;
+  margin-top: 10%;
+}
+
+.componentHeading{
+  text-align: left;
+  color:#192f60;
+  font-size:18px;
+  font-weight: bold;
+  padding-top:2%;
+}
+
+.componentSubHeading{
+  text-align: left;
+  color:gray;
+  font-size:13px;
+  margin-top: 2% ;
+}
+
+ul li .anchor_tags{
+  text-decoration: none;
+}
+
+.square1{
+  width:10px;
+  height:10px;
+  background:#64DD17;
+}
+
+.square{
+  width:10px;
+  height:10px;
+  background:blue;
+}
+
+.square2{
+  width:10px;
+  height:10px;
+  background:red;
+}
+
+.square3{
+  width:10px;
+  height:10px;
+  background:orange;
+}
+
+.square4{
+  width:10px;
+  height:10px;
+  background:yellow;
+}

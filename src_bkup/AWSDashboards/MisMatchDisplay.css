@@ -1,0 +1,47 @@
+.locationSelector{
+  margin-top: 15px;
+  text-align: left;
+}
+
+/* .chart{
+  height:480px;
+  width: 480px;
+  padding-top: 10px;
+  padding-right: 60px;
+} */
+
+#customers td, #customers th {
+  border: 1px solid rgb(221, 221, 221);
+  padding: 0px;
+}
+
+#customers th{
+  /* background-color: #FFFDE7; */
+  font-size: 0.875em;
+  text-align: center;
+}
+
+#customers td{
+  font-size: 0.840em;
+  /* height: 25px; */
+  text-align: center;
+  font-family: Arial;
+  /* font-family: Arial, Helvetica; */
+  /* vertical-align: center; */
+  /* font-family:  Arial,Times; */
+  /* font-family:Arial, Helvetica */
+  /* font-family: Georgia */
+  /* font-family: 'Trebuchet MS', sans-serif; */
+  /* font-family: Georgia, serif; */
+  /* font-family: "Times New Roman", Times, serif;  */
+  /* font-family: "Lucida Console", "Courier New", monospace; */ 
+  /* font-family: Ubuntu, sans-serif; */
+  
+}
+
+
+
+
+
+
+

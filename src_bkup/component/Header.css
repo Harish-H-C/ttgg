@@ -1,0 +1,36 @@
+.header{
+    background-color: #455A64;
+     position: relative;
+     top: 0;
+     width: 100%;
+    z-index: 1;
+}
+
+.header1{
+    background-color: #455A64;
+    /* position: fixed; */
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.Button{
+    background-color: aliceblue;
+}
+
+.extratag{
+    color:white;
+    margin-top: 18px;
+    font-size: 18px;
+}
+.p-2{
+    font-size: 18px;
+}
+
+h6{
+    color:white;
+}
+
+.color{
+    color: #FDD835;
+}

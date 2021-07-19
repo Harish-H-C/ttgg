@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+*:before,
+*:after {
+ box-sizing: border-box;
+}
+html,
+body {
+ height: 100%;
+ position: relative;
+}
+.loginPage{
+    min-height: 100vh; /* will cover the 100% of viewport */
+    overflow: hidden;
+    display: block;
+    position: relative;
+}
+/* .col-lg-2{
+    margin-top: 65px;
+    padding-left: 40px;
+} */
+#midalignSignin{
+    margin-top: 12%;
+    margin-left:8% ;
+}
+.htag{
+    padding-bottom: 20%;
+}
+
+
+/* .form-control{
+    height: 35px; 
+    width: 180px;
+    font-size: 16px;
+    padding-left:15px;
+} */
+
+/* .form-control{
+    /* height: 30px;
+    width: 180px;; */
+    /* font-size: 16px; */
+/* } */ 
+
+
+
+/* .col-lg-8{
+    margin-top: 65px;
+} */
+
+.col-lg-8 .img-fluid{
+    width: 65%;
+    height: auto;
+}
+
+.vl {
+    margin-top: 65px;
+    border-left: 2px solid rgb(196, 192, 192);
+    height: auto;
+    left: 30%;
+  }
+
+  .img-fluid{
+      margin-left: 10%;
+  }
+
+  
+.error-msg{
+    color:red;
+    margin: 5px 0;
+    font-weight: 12px;
+}
+
+.in{
+    padding-left: 40px; 
+}
+
+
+button .btn .btn-primary   {
+    color:red;
+}
+.label{
+    font-size: 16px;
+}
+
+.btn2{
+    /* font-family: "Roboto",sans-serif; */
+    font-size: 80%;
+    font-weight: bold;
+    background:#455A64;
+    width: 85px;
+    height: 35px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: #455A64;
+    
+}
