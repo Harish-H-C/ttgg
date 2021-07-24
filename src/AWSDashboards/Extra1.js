@@ -15,7 +15,7 @@ import {
 
 const Extra1 = (props) => {
     const [holdStartState,setHoldStartState] = React.useState(
-        new Moment().subtract(3,'d').format('YYYY-MM-DD')
+        new Moment().subtract(5,'d').format('YYYY-MM-DD')
     )
     const [holdEndState,setHoldEndState] = React.useState(
         new Moment().add(1,'d').format('YYYY-MM-DD')
@@ -23,7 +23,7 @@ const Extra1 = (props) => {
 
     const [select_Start_Date,setSelectedDate] = React.useState(
         // new Moment(new Date("2021-04-01")).format('YYYY-MM-DD')
-        new Moment().subtract(3,'d').format('YYYY-MM-DD')
+        new Moment().subtract(5,'d').format('YYYY-MM-DD')
     )
     const [select_End_Date,setSelectedDate1] = React.useState(
         new Moment(new Date()).format('YYYY-MM-DD')
@@ -178,8 +178,8 @@ const Extra1 = (props) => {
                             <div className="pl-5"></div>
 
                             <select className="custom-select mb-2" style={{ height: "42px", width: "200px" }}>
-                                <option>Banashankari</option>
-                                {/* <option selected>Banashankari</option>
+                                <option>Jayanagar</option>
+                                {/* <option selected>Jayanagar</option>
                     <option disabled>Jayanagar</option>  */}
                             </select>
                             <div className="pl-5"></div>
@@ -264,14 +264,14 @@ const Extra1 = (props) => {
                                 <thead>
                                     <tr>
                                         <th>City</th>
-                                        <th>Outlet</th>
+                                        <th>Facility</th>
                                         <th>Room Nr</th>
-                                        <th>08-07-2021</th>
-                                        <th>09-07-2021</th>
-                                        <th>10-07-2021</th>
-                                        <th>11-07-2021</th>
-                                        <th>12-07-2021</th>
-                                        <th>13-07-2021</th>
+                                        <th>20-07-21</th>
+                                        <th>21-07-21</th>
+                                        <th>22-07-21</th>
+                                        <th>23-07-21</th>
+                                        <th>24-07-21</th>
+                                        <th>25-07-21</th>
                                 
                                         {/* 
                                         <th>07-06-2021</th>
@@ -304,7 +304,7 @@ const Extra1 = (props) => {
                                 <tbody>
                                     <tr>
                                             <td style={{fontWeight:"bold"}}>Bangalore</td>
-                                            <td style={{fontWeight:"bold"}}>Banashankari</td>
+                                            <td style={{fontWeight:"bold"}}>Jayanagar</td>
                                             <td style={{fontWeight:"bold"}}>Room 1</td>
                                             <td ><button style={{height:"40px",width:"100%",borderRadius:"5px",backgroundColor:'Green',color:'white',marginTop:"-6px",marginBottom:"-5px"}}>Billed</button></td>
                                             <td ><button style={{height:"40px",width:"100%",borderRadius:"5px",backgroundColor:'Red',color:'white',marginTop:"-6px",marginBottom:"-5px"}}>Unbilled</button></td>
@@ -315,7 +315,7 @@ const Extra1 = (props) => {
                                         </tr>
                                         <tr>
                                             <td style={{fontWeight:"bold"}}>Bangalore</td>
-                                            <td style={{fontWeight:"bold"}}>Banashankari</td>
+                                            <td style={{fontWeight:"bold"}}>Jayanagar</td>
                                             <td style={{fontWeight:"bold"}}>Room 2</td>
                                             <td ><button style={{height:"40px",width:"100%",borderRadius:"5px",backgroundColor:'White',color:'Black',marginTop:"-6px",marginBottom:"-5px"}}>Unoccupied</button></td>
                                             <td ><button style={{height:"40px",width:"100%",borderRadius:"5px",backgroundColor:'Green',color:'white',marginTop:"-6px",marginBottom:"-5px"}}>Billed</button></td>
@@ -326,7 +326,7 @@ const Extra1 = (props) => {
                                         </tr>
                                         <tr>
                                             <td style={{fontWeight:"bold"}}>Bangalore</td>
-                                            <td style={{fontWeight:"bold"}}>Banashankari</td>
+                                            <td style={{fontWeight:"bold"}}>Jayanagar</td>
                                             <td style={{fontWeight:"bold"}}>Room 3</td>
                                             <td ><button style={{height:"40px",width:"100%",borderRadius:"5px",backgroundColor:'Green',color:'white',marginTop:"-6px",marginBottom:"-5px"}}>Billed</button></td>
                                             <td ><button style={{height:"40px",width:"100%",borderRadius:"5px",backgroundColor:'Red',color:'white',marginTop:"-6px",marginBottom:"-5px"}}>Unbilled</button></td>
@@ -337,7 +337,7 @@ const Extra1 = (props) => {
                                         </tr>
                                         <tr>
                                             <td style={{fontWeight:"bold"}}>Bangalore</td>
-                                            <td style={{fontWeight:"bold"}}>Banashankari</td>
+                                            <td style={{fontWeight:"bold"}}>Jayanagar</td>
                                             <td style={{fontWeight:"bold"}}>Room 4</td>
                                             <td ><button style={{height:"40px",width:"100%",borderRadius:"5px",backgroundColor:'Green',color:'white',marginTop:"-6px",marginBottom:"-5px"}}>Billed</button></td>
                                             <td ><button style={{height:"40px",width:"100%",borderRadius:"5px",backgroundColor:'Red',color:'white',marginTop:"-6px",marginBottom:"-5px"}}>Unbilled</button></td>
@@ -348,7 +348,7 @@ const Extra1 = (props) => {
                                         </tr>
                                         <tr>
                                             <td style={{fontWeight:"bold"}}>Bangalore</td>
-                                            <td style={{fontWeight:"bold"}}>Banashankari</td>
+                                            <td style={{fontWeight:"bold"}}>Jayanagar</td>
                                             <td style={{fontWeight:"bold"}}>Room 5</td>
                                             <td ><button style={{height:"40px",width:"100%",borderRadius:"5px",backgroundColor:'Red',color:'white',marginTop:"-6px",marginBottom:"-5px"}}>Unbilled</button></td>
                                             <td ><button style={{height:"40px",width:"100%",borderRadius:"5px",backgroundColor:'White',color:'Black',marginTop:"-6px",marginBottom:"-5px"}}>Unoccupied</button></td>
@@ -359,7 +359,7 @@ const Extra1 = (props) => {
                                         </tr>
                                         <tr>
                                             <td style={{fontWeight:"bold"}}>Bangalore</td>
-                                            <td style={{fontWeight:"bold"}}>Banashankari</td>
+                                            <td style={{fontWeight:"bold"}}>Jayanagar</td>
                                             <td style={{fontWeight:"bold"}}>Room 6</td>
                                             <td ><button style={{height:"40px",width:"100%",borderRadius:"5px",backgroundColor:'Red',color:'white',marginTop:"-6px",marginBottom:"-5px"}}>Unbilled</button></td>
                                             <td ><button style={{height:"40px",width:"100%",borderRadius:"5px",backgroundColor:'White',color:'Black',marginTop:"-6px",marginBottom:"-5px"}}>Unoccupied</button></td>
@@ -370,7 +370,7 @@ const Extra1 = (props) => {
                                         </tr>
                                     {/* <tr>
                                         <td ><button style={{height:"40px",width:"100%",borderRadius:"5px",backgroundColor:'#B0BEC5',color:'white',marginTop:"-6px",marginBottom:"-5px"}}>Bangalore</button></td>
-                                        <td ><button style={{height:"40px",width:"100%",borderRadius:"5px",backgroundColor:'#B0BEC5',color:'white',marginTop:"-6px",marginBottom:"-5px"}}>Banashankari</button></td>
+                                        <td ><button style={{height:"40px",width:"100%",borderRadius:"5px",backgroundColor:'#B0BEC5',color:'white',marginTop:"-6px",marginBottom:"-5px"}}>Jayanagar</button></td>
                                         <td ><button style={{height:"40px",width:"100%",borderRadius:"5px",backgroundColor:'#B0BEC5',color:'white',marginTop:"-6px",marginBottom:"-5px"}}>Room 6</button></td>
                                         <td ><button style={{height:"40px",width:"100%",borderRadius:"5px",backgroundColor:'Green',color:'white',marginTop:"-6px",marginBottom:"-5px"}}>Billed</button></td>
                                         <td ><button style={{height:"40px",width:"100%",borderRadius:"5px",backgroundColor:'Red',color:'white',marginTop:"-6px",marginBottom:"-5px"}}>Unbilled</button></td>
@@ -409,7 +409,7 @@ const Extra1 = (props) => {
                                         <tbody>
                                             <tr>
                                                 <td style={{fontWeight:"bold"}}>Bangalore</td>
-                                                <td style={{fontWeight:"bold"}}>Banashankari</td>
+                                                <td style={{fontWeight:"bold"}}>Jayanagar</td>
                                                 <td style={{fontWeight:"bold"}}>Room 1</td>
                                                 <td ><button style={{height:"40px",width:"100%",borderRadius:"5px",backgroundColor:'Green',color:'white',marginTop:"-6px",marginBottom:"-5px"}}>Billed</button></td>
                                                 <td ><button style={{height:"40px",width:"100%",borderRadius:"5px",backgroundColor:'Red',color:'white',marginTop:"-6px",marginBottom:"-5px"}}>Unbilled</button></td>
@@ -420,7 +420,7 @@ const Extra1 = (props) => {
                                             </tr>
                                             <tr>
                                                 <td style={{fontWeight:"bold"}}>Bangalore</td>
-                                                <td style={{fontWeight:"bold"}}>Banashankari</td>
+                                                <td style={{fontWeight:"bold"}}>Jayanagar</td>
                                                 <td style={{fontWeight:"bold"}}>Room 2</td>
                                                 <td ><button style={{height:"40px",width:"100%",borderRadius:"5px",backgroundColor:'White',color:'Black',marginTop:"-6px",marginBottom:"-5px"}}>Unoccupied</button></td>
                                                 <td ><button style={{height:"40px",width:"100%",borderRadius:"5px",backgroundColor:'Green',color:'white',marginTop:"-6px",marginBottom:"-5px"}}>Billed</button></td>
@@ -431,7 +431,7 @@ const Extra1 = (props) => {
                                             </tr>
                                             <tr>
                                                 <td style={{fontWeight:"bold"}}>Bangalore</td>
-                                                <td style={{fontWeight:"bold"}}>Banashankari</td>
+                                                <td style={{fontWeight:"bold"}}>Jayanagar</td>
                                                 <td style={{fontWeight:"bold"}}>Room 3</td>
                                                 <td ><button style={{height:"40px",width:"100%",borderRadius:"5px",backgroundColor:'Green',color:'white',marginTop:"-6px",marginBottom:"-5px"}}>Billed</button></td>
                                                 <td ><button style={{height:"40px",width:"100%",borderRadius:"5px",backgroundColor:'Red',color:'white',marginTop:"-6px",marginBottom:"-5px"}}>Unbilled</button></td>
@@ -442,7 +442,7 @@ const Extra1 = (props) => {
                                             </tr>
                                             <tr>
                                                 <td style={{fontWeight:"bold"}}>Bangalore</td>
-                                                <td style={{fontWeight:"bold"}}>Banashankari</td>
+                                                <td style={{fontWeight:"bold"}}>Jayanagar</td>
                                                 <td style={{fontWeight:"bold"}}>Room 4</td>
                                                 <td ><button style={{height:"40px",width:"100%",borderRadius:"5px",backgroundColor:'Green',color:'white',marginTop:"-6px",marginBottom:"-5px"}}>Billed</button></td>
                                                 <td ><button style={{height:"40px",width:"100%",borderRadius:"5px",backgroundColor:'Red',color:'white',marginTop:"-6px",marginBottom:"-5px"}}>Unbilled</button></td>
@@ -453,7 +453,7 @@ const Extra1 = (props) => {
                                             </tr>
                                             <tr>
                                                 <td style={{fontWeight:"bold"}}>Bangalore</td>
-                                                <td style={{fontWeight:"bold"}}>Banashankari</td>
+                                                <td style={{fontWeight:"bold"}}>Jayanagar</td>
                                                 <td style={{fontWeight:"bold"}}>Room 5</td>
                                                 <td ><button style={{height:"40px",width:"100%",borderRadius:"5px",backgroundColor:'Red',color:'white',marginTop:"-6px",marginBottom:"-5px"}}>Unbilled</button></td>
                                                 <td ><button style={{height:"40px",width:"100%",borderRadius:"5px",backgroundColor:'White',color:'Black',marginTop:"-6px",marginBottom:"-5px"}}>Unoccupied</button></td>
@@ -464,7 +464,7 @@ const Extra1 = (props) => {
                                             </tr>
                                             <tr>
                                                 <td style={{fontWeight:"bold"}}>Bangalore</td>
-                                                <td style={{fontWeight:"bold"}}>Banashankari</td>
+                                                <td style={{fontWeight:"bold"}}>Jayanagar</td>
                                                 <td style={{fontWeight:"bold"}}>Room 6</td>
                                                 <td ><button style={{height:"40px",width:"100%",borderRadius:"5px",backgroundColor:'Red',color:'white',marginTop:"-6px",marginBottom:"-5px"}}>Unbilled</button></td>
                                                 <td ><button style={{height:"40px",width:"100%",borderRadius:"5px",backgroundColor:'White',color:'Black',marginTop:"-6px",marginBottom:"-5px"}}>Unoccupied</button></td>
@@ -475,7 +475,7 @@ const Extra1 = (props) => {
                                             </tr>
                                             {/* <tr>
                                                 <td ><button style={{height:"40px",width:"100%",borderRadius:"5px",backgroundColor:'#B0BEC5',color:'white',marginTop:"-6px",marginBottom:"-5px"}}>Bangalore</button></td>
-                                                <td ><button style={{height:"40px",width:"100%",borderRadius:"5px",backgroundColor:'#B0BEC5',color:'white',marginTop:"-6px",marginBottom:"-5px"}}>Banashankari</button></td>
+                                                <td ><button style={{height:"40px",width:"100%",borderRadius:"5px",backgroundColor:'#B0BEC5',color:'white',marginTop:"-6px",marginBottom:"-5px"}}>Jayanagar</button></td>
                                                 <td ><button style={{height:"40px",width:"100%",borderRadius:"5px",backgroundColor:'#B0BEC5',color:'white',marginTop:"-6px",marginBottom:"-5px"}}>Room 6</button></td>
                                                 <td ><button style={{height:"40px",width:"100%",borderRadius:"5px",backgroundColor:'Green',color:'white',marginTop:"-6px",marginBottom:"-5px"}}>Billed</button></td>
                                                 <td ><button style={{height:"40px",width:"100%",borderRadius:"5px",backgroundColor:'Red',color:'white',marginTop:"-6px",marginBottom:"-5px"}}>Unbilled</button></td>
